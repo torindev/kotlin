@@ -48,6 +48,32 @@ fun runCollectionsAndFunsTestDrive() {
 
 }
 
+fun testStringSplit() {
+    val line = "something.like.this-and-this_and_another=one"
+    // да, я полуу массив из трех элементов с помощью этого сплита
+    val mass = line.split(".")
+    println(mass)
+
+    // чтобы получить поведение как в Джава, нужно
+    val mass2 = line.split(".".toRegex())
+    println(mass2) //выведет массив из 19 "ничего"
+
+    val mass3 = line.split(".", "-", "_", "=")
+    println(mass3)
+}
+
+data class ParsedPath(val dir: String, val fullName: String, val fileName:String, val ext: String);
+
+fun parsePath(path: String): ParsedPath {
+    val dir = path.substringBeforeLast("/")
+    val fullName = path.substringAfterLast("/")
+
+    val fileName = fullName.substringBeforeLast(".")
+    val ext = fullName.substringAfterLast(".")
+
+    return ParsedPath(dir, fullName, fileName, ext)
+}
+
 
 // Оператор распаковки и переменно число аргументов
 fun tsts(vararg ints: Int) {
