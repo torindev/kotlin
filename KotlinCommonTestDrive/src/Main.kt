@@ -1,8 +1,6 @@
-import misc.*
-import misc.MathTree.Companion.eval
-import misc.MathTree.Companion.testEval
+import chapter_1_2_3_4.misc.*
+import chapter_1_2_3_4.runDelegationTest
 
 fun main(args: Array<String>){
-    val path = "c:/Work/someDir/MyProj/KotlinTestDrive.kt";
-    println(parsePath(path))
+    runDelegationTest()
 }

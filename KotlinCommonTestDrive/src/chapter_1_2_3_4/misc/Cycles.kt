@@ -1,4 +1,4 @@
-package misc
+package chapter_1_2_3_4.misc
 
 import java.util.*
 

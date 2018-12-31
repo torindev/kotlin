@@ -1,7 +1,7 @@
 // это скажет компилятору что нуно создать класс (и файл) с таким именем,
 // Если убрать аннотацию, то имя класса было бы как имя файла + KT, т.е. = CollectionsAndFunctionsTestDriveKT
 @file: JvmName("KollectionsTD")
-package misc
+package chapter_1_2_3_4.misc
 
 //Это аналог public static final String MY_NAME_IS из Java
 const val MY_NAME_IS = "DMITRIY"
@@ -16,7 +16,7 @@ var somethingLikeThis = 44
 *   тут тоже самое, только без класса. Эти функции будут доступны из любого места проекта (с помощью импорта)
 *   например чтобы функция initCollections() была досутпна в Main,
 *   ее нужно импортировать вот так:
-*   import misc.initCollections
+*   import chapter_1_2_3_4.misc.initCollections
 * */
 
 fun runCollectionsAndFunsTestDrive() {
