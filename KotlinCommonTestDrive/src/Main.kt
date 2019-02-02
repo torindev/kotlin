@@ -1,6 +1,8 @@
 import chapter_1_2_3_4.misc.*
 import chapter_1_2_3_4.runDelegationTest
+import java.util.*
 
 fun main(args: Array<String>){
-    runDelegationTest()
+    println(max(4, 5))
+    println(max2(4, 5))
 }
