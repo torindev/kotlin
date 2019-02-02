@@ -1,8 +1,40 @@
 import chapter_1_2_3_4.misc.ColorsAdvanced.*
 import chapter_1_2_3_4.misc.ColorsAdvanced
 import java.lang.Exception
+import kotlin.random.Random
+
+
+fun runMyTest1() {
+    val w = WhenTD();
+    w.testMyWhenGuessTheNum(5)
+    w.testMyWhenGuessTheNum(10)
+    w.testMyWhenGuessTheNum(3)
+    w.testMyWhenGuessTheNum(7)
+    w.testMyWhenGuessTheNum(18)
+}
 
 class WhenTD {
+    private var num = Random.nextInt(20)
+    private var attempts = 0
+
+    fun testMyWhenGuessTheNum(guessWhatIsNum: Int) {
+
+        when {
+            guessWhatIsNum < num -> {
+                println("Твое число $guessWhatIsNum, но загаданное число больше...")
+                attempts++
+            }
+            guessWhatIsNum > num -> {
+                println("Твое число $guessWhatIsNum, но загаданное число меньше...")
+                attempts++
+            }
+            else -> {
+                println("Твое число $guessWhatIsNum, и ты наконец угадал! попыток: $attempts")
+                attempts = 0
+                num = Random.nextInt(20)
+            }
+        }
+    }
     fun getMnemonic(colorsAdvanced: ColorsAdvanced) =
             when (colorsAdvanced) {
                 RED -> "Каждый"

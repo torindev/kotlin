@@ -3,6 +3,5 @@ import chapter_1_2_3_4.runDelegationTest
 import java.util.*
 
 fun main(args: Array<String>){
-    val w = WhenTD();
-    println(w.getMnemonic(ColorsAdvanced.VIOLET))
+    runMyTest1()
 }
