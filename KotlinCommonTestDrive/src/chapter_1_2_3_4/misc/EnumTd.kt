@@ -16,4 +16,7 @@ enum class ColorsAdvanced(val r:Int, val g:Int, val b:Int) {
         return Integer.toHexString(rgb())
     }
 
+    private fun getTwoDigits(num: Int): String {
+        return String.format("%.2d", num)
+    }
 }

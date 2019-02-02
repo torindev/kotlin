@@ -1,9 +1,10 @@
-import ColorEnumTD.*
+import chapter_1_2_3_4.misc.ColorsAdvanced.*
+import chapter_1_2_3_4.misc.ColorsAdvanced
 import java.lang.Exception
 
 class WhenTD {
-    fun getMnemonic(colorEnumTD: ColorEnumTD) =
-            when (colorEnumTD) {
+    fun getMnemonic(colorsAdvanced: ColorsAdvanced) =
+            when (colorsAdvanced) {
                 RED -> "Каждый"
                 ORANGE -> "Охотник"
                 YELLOW -> "Желает"
@@ -13,14 +14,14 @@ class WhenTD {
                 VIOLET -> "Фазан"
             }
 
-    fun getWarmth(colorEnumTD: ColorEnumTD) = when(colorEnumTD) {
+    fun getWarmth(colorsAdvanced: ColorsAdvanced) = when(colorsAdvanced) {
         RED, ORANGE, YELLOW -> "Теплый"
         GREEN -> "Нейтральный"
         BLUE, INDIGO, VIOLET -> "Холодный"
         else -> "dummy"
     }
 
-    fun mix(c1: ColorEnumTD, c2: ColorEnumTD) =
+    fun mix(c1: ColorsAdvanced, c2: ColorsAdvanced) =
         when(setOf(c1, c2)) {
             setOf(RED, YELLOW) -> ORANGE
             setOf(YELLOW, BLUE) -> GREEN
@@ -28,7 +29,7 @@ class WhenTD {
             else -> throw Exception("dirty color")
         }
 
-    fun mixOptim(c1: ColorEnumTD, c2: ColorEnumTD) =
+    fun mixOptim(c1: ColorsAdvanced, c2: ColorsAdvanced) =
             when {
                 (c1 == RED && c2 == YELLOW) || (c1 == YELLOW && c2 == RED) -> ORANGE
                 (c1 == YELLOW && c2 == BLUE) || (c1 == BLUE && c2 == YELLOW) -> GREEN
