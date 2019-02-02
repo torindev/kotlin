@@ -2,6 +2,7 @@ import chapter_1_2_3_4.misc.ColorsAdvanced.*
 import chapter_1_2_3_4.misc.ColorsAdvanced
 import java.lang.Exception
 import kotlin.random.Random
+import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType
 
 
 fun runMyTest1() {
@@ -13,7 +14,35 @@ fun runMyTest1() {
     w.testMyWhenGuessTheNum(18)
 }
 
+fun runAutoTypeTest() {
+    val w1 = WhenTD()
+    w1.testAutoTypeConversion("what?")
+    w1.testAutoTypeConversion(0.5)
+}
+
 class WhenTD {
+
+
+    // Автоматическиое приведение типа, очень сильная штука
+    fun testAutoTypeConversion(obj: Any) {
+        when (obj) {
+            is Int -> {
+                println("this is Int")
+            }
+            is String -> {
+                println("this is String")
+            }
+            else -> {
+                println("Who is fucking know, what is this...")
+
+            }
+        }
+    }
+
+
+
+
+
     private var num = Random.nextInt(20)
     private var attempts = 0
 
