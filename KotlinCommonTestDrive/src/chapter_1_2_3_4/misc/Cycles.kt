@@ -2,6 +2,52 @@ package chapter_1_2_3_4.misc
 
 import java.util.*
 
+fun testCycles2() {
+    for (i in 1..10) {
+        print("$i ,")
+    }
+
+    println()
+
+    for (i in 1..10 step 2) {
+        print("$i ,")
+    }
+
+    println()
+
+    val size = 10
+    for (i in 0 until size) {
+        print("${if (i != 5) i else "FIVE!!"}, ")
+    }
+
+    println()
+
+    // Обход Map
+    val map = HashMap<String, String>()
+    map.put("one", "some word")
+    map.put("two", "some word")
+    map.put("three", "some word")
+    map.put("four", "some word")
+
+    for ((key, value) in map) {
+        println("key: $key, value: $value")
+    }
+
+    println()
+
+    // обойти лист и получить индекс элемента в листе
+    val keys = arrayListOf("one", "two", "three")
+
+    for ((index, element) in keys.withIndex()) {
+        println("index: $index, element: $element")
+    }
+
+    // с помощью in можно проверить вхождение в диапазон
+    val isLetter = 'c' in 'a'..'z' || 'c' in 'A'..'Z'
+    val isNum = 'c' in '0'..'9'
+    println("isLetter: $isLetter, isNum: $isNum ")
+}
+
 fun testCycles() {
     val max = 10
     var i = 0
