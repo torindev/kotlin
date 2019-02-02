@@ -2,6 +2,11 @@ package chapter_1_2_3_4.misc
 
 import java.lang.StringBuilder
 
+fun testIf(q1:Int, q2:Int): Int {
+    val a = if (q1 > q2) q1 else q2
+    return a;
+}
+
 fun testMisc() {
     val str1 = "Dima"
     val str2 = StringBuilder("Dima").toString()
