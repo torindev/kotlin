@@ -12,29 +12,27 @@ package chapter_3
 
 fun runChapter3() {
     val list = listOf(1, 3, 6, 14, 15)
-    println(joinToString(
-        collection = list,
+    println(list.joinToString(
         separator = " * ",
         prefix = "_-=[",
         postfix = "]=-_")
     )
 
-    println(joinToString(collection = list))
-    println(joinToString(collection = list, postfix = "?"))
+    println(list.joinToString())
+    println(list.joinToString(postfix = "?"))
+    println("Dima".lastChar())
 }
 
-var someValue = 3
-const val HEAD = 1
+fun String.lastChar(): Char = this.get(this.length - 1)
 
 
-fun <T> joinToString(
-    collection: Collection<T>,
+fun <T> Collection<T>.joinToString(
     separator: String = ",",
     prefix: String = "",
     postfix: String = ""
 ): String {
     val result = StringBuilder(prefix)
-    for ((index, element) in collection.withIndex()) {
+    for ((index, element) in this.withIndex()) {
         if (index > 0) {
             result.append(separator)
         }

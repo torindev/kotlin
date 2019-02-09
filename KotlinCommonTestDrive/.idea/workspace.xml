@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1165d08a-4d2c-414c-bc78-f074db792cc3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/chapter_3/Chapter3Root.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chapter_3/Chapter3Root.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter_3/Chapter3Root.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/chapter_3/Chapter3Root.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="25" selection-start-line="25" selection-end-line="43" selection-end-column="1" />
+            <state relative-caret-position="340">
+              <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -370,8 +368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chapter_3/Chapter3Root.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="25" selection-start-line="25" selection-end-line="43" selection-end-column="1" />
+        <state relative-caret-position="340">
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
         </state>
       </provider>
     </entry>
