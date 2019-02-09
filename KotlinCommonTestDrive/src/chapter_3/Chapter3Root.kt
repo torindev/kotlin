@@ -21,7 +21,32 @@ fun runChapter3() {
     println(list.joinToString())
     println(list.joinToString(postfix = "?"))
     println("Dima".lastChar())
+
+    extract()
 }
+
+
+fun extract() {
+    val list = listOf(1, 2, 3, 4, 5)
+
+    val array = arrayOf(1,  2, 3, 4, 5)
+
+    val list2 = listOf(array)
+    val list3 = listOf(*array)
+
+    println(list2)
+    println(list3)
+
+    val map = mapOf(
+        1 to "one",
+        7 to "sevent",
+        8 to "eight",
+        10 to "ten"
+    )
+}
+
+infix fun Any.to(other: Any) = Pair(this, other)
+
 
 fun String.lastChar(): Char = this.get(this.length - 1)
 
