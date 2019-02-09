@@ -11,18 +11,15 @@ package chapter_3
 */
 
 fun runChapter3() {
-    val list = listOf(1, 3, 6, 14, 15)
-    println(list.joinToString(
-        separator = " * ",
-        prefix = "_-=[",
-        postfix = "]=-_")
-    )
+    testDriveString()
+}
 
-    println(list.joinToString())
-    println(list.joinToString(postfix = "?"))
-    println("Dima".lastChar())
-
-    extract()
+fun testDriveString() {
+    val str = "one.two.three.four"
+    val mass = str.split(".".toRegex())
+    val mass2 = str.split(".")
+    println(mass)
+    println(mass2)
 }
 
 
@@ -43,6 +40,22 @@ fun extract() {
         8 to "eight",
         10 to "ten"
     )
+
+    val pair = 1 to "one"
+
+}
+
+fun testDriveJoin() {
+    val list = listOf(1, 3, 6, 14, 15)
+    println(list.joinToString(
+        separator = " * ",
+        prefix = "_-=[",
+        postfix = "]=-_")
+    )
+
+    println(list.joinToString())
+    println(list.joinToString(postfix = "?"))
+    println("Dima".lastChar())
 }
 
 infix fun Any.to(other: Any) = Pair(this, other)
