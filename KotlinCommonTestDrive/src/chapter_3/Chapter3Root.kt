@@ -1,5 +1,7 @@
 package chapter_3
 
+import chapter_4.testExpr
+
 
 /*
     - Ф-ции

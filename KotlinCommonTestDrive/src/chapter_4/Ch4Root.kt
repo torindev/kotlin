@@ -1,5 +1,6 @@
 package chapter_4
 
+
 /*
     Про классы, интерфейсы,
     конструкторы, свойства, ключевое слово object,
@@ -7,28 +8,13 @@ package chapter_4
 */
 
 fun ch4td() {
+    val sc = SomeClass()
+    sc.onOk()
+    sc.todo()
+    val tc1 = TestClass1.InnerClass1()
+    tc1.bar()
+    testExpr()
+
 
 }
 
-interface OnEvent {
-    fun onOk()
-    fun onFail()
-}
-
-abstract class SomeAbstract {
-    abstract fun todo()
-}
-
-class MainClass : SomeAbstract(), OnEvent {
-    override fun todo() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun onOk() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun onFail() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-}
