@@ -24,6 +24,8 @@ fun runCollectionsAndFunsTestDrive() {
     val list = arrayListOf(1, 5, 3)
     val map = hashMapOf(1 to "one", 2 to "two", 3 to "three", 4 to "four")
 
+    val isReal = list.any { it == 5 }
+
     println(set.javaClass)
     println(list.javaClass)
     println(map.javaClass)
