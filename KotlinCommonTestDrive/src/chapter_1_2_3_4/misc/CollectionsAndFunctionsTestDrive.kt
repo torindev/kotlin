@@ -20,6 +20,21 @@ var somethingLikeThis = 44
 * */
 
 fun runCollectionsAndFunsTestDrive() {
+
+    val mass = arrayOf("one", "two", "three")
+    for (i in mass.indices) {
+        println("$i) value = ${mass[i]}")
+    }
+
+    val letters = Array(26) {i -> ('a' + i).toString()}
+    for (s in letters) {
+        print("$s:")
+    }
+    println()
+    println(letters.joinToString(""))
+
+
+
     val set = hashSetOf(1, 7, 53)
     val list = arrayListOf(1, 5, 3)
     val map = hashMapOf(1 to "one", 2 to "two", 3 to "three", 4 to "four")
