@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1165d08a-4d2c-414c-bc78-f074db792cc3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/chapter_7/Multideclarations_7_4.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter_8/Functions_8_1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/Funcs.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/KotlinCommonTestDrive/META-INF/KotlinCommonTestDrive.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KotlinCommonTestDrive/META-INF/KotlinCommonTestDrive.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chapter_7/Overloads_7_1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter_7/Overloads_7_1.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chapter_8/Functions_8_1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter_8/Functions_8_1.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/chapter_8/Functions_8_1.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+            <state relative-caret-position="221">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -179,7 +173,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552754234157" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552756068957" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../RandomMusic/RandMusicMaven" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -264,7 +258,7 @@
       <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.5785482" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4989339" weight="0.55807364" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4989339" weight="0.55764073" />
       <window_info anchor="bottom" id="Flutter Performance" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -568,8 +562,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chapter_8/Functions_8_1.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        <state relative-caret-position="221">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
