@@ -1,6 +1,8 @@
 package chapter_7
 
+import common.logg
 import java.lang.IndexOutOfBoundsException
+import java.time.LocalDate
 
 
 /* Перегрузка операторов
@@ -16,16 +18,21 @@ import java.lang.IndexOutOfBoundsException
 
 
 fun run7_1() {
+    logg("Првоеряется перегрузка оператора +")
     val p1 = Point(10, 20)
     val p2 = Point(20, 30)
     val p3 = p1 + p2
     println(p3)
 
+    logg("Созадется класс объект класса Point с координатами 10 и 20, " +
+            "и проверяется работы перегруженного оператора *")
     val p4 = Point(10, 20)
     println(p4 * 1.5)
 
+    logg("Перегрузка оператра get для класса Point")
     println(p4[1])
 
+    logg("Сравниаются Alice Smith и Bob Johnson")
     val pers1 = Person1603("Alice", "Smith")
     val pers2 = Person1603("Bob", "Johnson")
     println(pers1 < pers2)
@@ -35,14 +42,22 @@ fun run7_1() {
         можно проводить испольщуя синтаксис <><=>=
     */
 
+    logg("abc < bac")
     println("abc" < "bac")
 
+    logg("Изменяю значение Y у точки с координатами 10 и 20")
     val pMut = MutablePoint(10, 20)
     pMut[1] = 42
     println(pMut)
 
+    logg("Проверка работы перегрузки оператора in")
     val rect = Rectangle(Point(10, 20), Point(50, 50))
     println(Point(20, 30) in rect)
+
+    logg("Демонстрация работы диапазонов в классе LocalDate")
+    val now = LocalDate.now()
+    val vacation = now..now.plusDays(10)
+    println(now.plusWeeks(1) in vacation)
 
 }
 
