@@ -8,10 +8,11 @@ import chapter_6.run6_1
 import chapter_7.run7_1
 import chapter_7.run7_4
 import chapter_8.run8_1
+import chapter_8.run8_3
 import my_special_notes.loopsTestDrive
 import my_special_notes.runStreamSpeedTest
 import java.util.*
 
 fun main(args: Array<String>) {
-    run8_1()
+    run8_3()
 }

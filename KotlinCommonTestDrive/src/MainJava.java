@@ -1,10 +1,11 @@
 import java.util.Date;
 
 public class MainJava {
+    public enum Some {
+        One, Two, Free
+    }
     public static void main(String[] args) {
-        double d = 2.5d;
-        long val = (long) (d * 1000);
-        System.out.println(val);
-        System.out.println(new Date(1550572945970L));
+        System.out.println("String and " + Some.One);
+        System.out.println("String and " + Some.Two);
     }
 }
